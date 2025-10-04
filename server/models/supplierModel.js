@@ -7,6 +7,7 @@ const supplierSchema = new Schema({
     role: {
         type: String,
         // Supplier
+        required: true,
     },
     profile: {
         type: String,

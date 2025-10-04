@@ -4,6 +4,7 @@ const userSchema = new Schema({
     role:{
         type:String,
         // Consumer
+        required: true,
     },
     profile: {
         type: String,
@@ -44,4 +45,4 @@ const userSchema = new Schema({
 
 const Users = mongoose.model('Users', userSchema);
 
-export {Users}
+export {Users, userSchema}
